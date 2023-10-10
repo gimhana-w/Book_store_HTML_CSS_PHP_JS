@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Shop</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+	<header class="header">
+
+        <div class="header-1">
+
+            <a href="" class="logo"> AnyBook  </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div  id="search-btn" class="fas fa-search"></div>
+               
+            </div>
+            <p class="login-btn"> <a href="../log in.php">login</a> or <a href="./registration.html">register</a></p>
+
+
+        </div>
+
+        <div class="header-2">
+
+            <div class="navbar">
+                <a href="../Untitled-1.html">Home</a>
+                <a href="">contact us </a>
+                <a href="../about us page/About Us.html">about us</a>
+                <a href="../addmin/login.php">administrator</a>
+            </div>
+
+        </div>
+
+    </header>
+
+<!--registration form-->
+
+<div class = "registration_form">
+<h1 class="r_form">Registration Form</h1><br>
+	 
+	 
+	 <form onsubmit="return checkPassword()" action="./user_reg.php" method="post">
+	 
+	 <label for = "firstname">First Name</label><br>
+	 <input class = "inputfield" type="text" id="firstname" placeholder="First Name" name="firstname" required><br><br>
+	 
+	 <label for = "lastname">Last Name</label><br>
+	 <input class = "inputfield" type="text" id="lastname" placeholder="Last Name" name="lastname" required><br><br>
+	 
+	 <label>Gender</label>
+	 <input type="radio" id="male" name="gender" value="male" required>
+	 <label for="male">Male</label>
+	 
+	
+	 <input type="radio" id="female" name="gender" value="female" required>
+	 <label for="female">female</label> <br><br>
+	 
+	 <label for = "mobilenumber">Mobile Number</label><br>
+	 <input class = "inputfield" type="text" id="mobilenumber"  title="Please Enter Valid Mobile Number" placeholder="Mobile Number" name="mobilenumber" required><br><br>
+	 
+	 <label for = "emailaddress">E-mail Address</label><br>
+	 <input class = "inputfield" type="email" id="emailaddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Please Enter Valid E-mail Address" placeholder="E-mail Address" name="emailaddress" required><br><br>
+	 
+	 <p><label for="address">Address</label></p>
+	 <textarea id="address" name="address" rows="1" cols="70" placeholder="No:xx/xx , street address" required></textarea><br>
+     <textarea id="address" name="address" rows="1" cols="35" placeholder="district" required></textarea><br>
+     <textarea id="address" name="address" rows="1" cols="25" placeholder="city" required></textarea><br>
+     <textarea id="address" name="address" rows="1" cols="20" placeholder="postal/zip-code" required></textarea><br><br>
+    
+	 
+	 <label for="dob">Enter Your DOB</label><br>
+	 <input type="date" name="date" required><br>
+	 
+     <br>
+	 <label for="pwd">Password</label><br>
+	 <input class = "inputfield" type="password" id="pwd"  title="Must contain at least one number and one uppercase" placeholder="Password" name="password" required><br><br>
+	 
+	 <label for="rpwd">Re Enter Password</label><br>
+	 <input class = "inputfield" type="password" id="rpwd" placeholder="Password" name="password" required><br><br>
+	 
+	 <input type="checkbox" id="checb" onclick="enableButton()" value="checkbox">
+	 <label for="checb">Accept Privacy Policy & Terms</label><br><br>
+	 
+	 <button type = "submit" class="submitbtn" >Register</button>
+	 
+	 </form>
+    </div>
